@@ -1,16 +1,14 @@
 package com.example.demo.Controller;
 
 import com.example.demo.Model.Compra;
-import com.example.demo.Model.Vinil;
 import com.example.demo.Service.CompraService;
-import com.example.demo.Service.VinilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(path = "api/v1/compra")
 public class CompraController {
